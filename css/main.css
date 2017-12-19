@@ -1,0 +1,95 @@
+body, html {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Menu*/
+header {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+.logo {
+    float: left;
+}
+
+.menu {
+    float: right;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 30px;
+    border: 2px solid #0a037c;
+    border-radius: 15px;
+}
+
+nav ul li a {
+  padding: 0 8px;
+  text-decoration: none;
+  display: block;
+    color: #0a037c;
+}
+
+li:hover {
+  background-color: #0a037c;
+}
+
+li:hover a {
+  color: #fff;
+}
+
+/*Baner */
+
+.banner {
+    background-image:url(../images/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+/*Company*/
+.company {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.company_desc {
+    float: left;
+    width: 33%;
+    padding: 10px;  
+}
+
+.company_desc h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.company_desc p {
+    padding: 20px;
+    text-align: justify;
+}
+
+/*Witches */
+
