@@ -66,12 +66,17 @@ li:hover a {
 .company {
     margin-top: 50px;
     margin-bottom: 40px;
+    display: table;
 }
 
 .title {
     text-transform: uppercase;
-    text-align: center; 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    background-position: 30% 0px;
+    padding-left: 31%;
+    background-image: url(../images/pxl.png);
+    background-repeat: no-repeat;
+    padding-top: 20px;
 }
 
 .company_desc {
@@ -82,7 +87,6 @@ li:hover a {
 
 .company_desc h2 {
     text-align: center;
-    padding-bottom: 20px;
     padding-top: 10px;
 }
 
@@ -91,5 +95,61 @@ li:hover a {
     text-align: justify;
 }
 
+.line {
+    height: 3px;
+    margin: 0 auto;
+    background-color: #690080;
+    margin-bottom: 10px;
+}
+
+.line1, .line3 {
+    width: 70%;
+}
+
+.line2 {
+    width: 90%;
+}
+
+.line3 {
+    width: 65%;
+}
+
 /*Witches */
 
+.witches {
+    background-image: url(../images/banner_bckg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    padding-top: 20px;
+}
+
+.witches_desc {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.witches_desc h2,
+.witches_desc h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.title2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    background-position: 36% 0px;
+    padding-left: 37%;
+    background-image: url(../images/pxl.png);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
