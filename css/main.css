@@ -55,7 +55,7 @@ li:hover a {
 /*Baner */
 
 .banner {
-    background-image:url(../images/banner1.png);
+    background-image:url(../images/banner_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,8 +88,25 @@ li:hover a {
 }
 
 .title3 {
+    background-position: 43.5% 0px;
+    padding-left: 44%;
+}
+
+
+.title4 {
+    background-position: 46.5% 0px;
+    padding-left: 47%;
+}
+
+.title5 {
     background-position: 43% 0px;
     padding-left: 44%;
+}
+
+.title6 {
+    background-position: 43% 0px;
+    padding-left: 44%;
+    color: #fff;
 }
 
 .company_desc {
@@ -146,9 +163,8 @@ li:hover a {
 
 .avatar {
     width: 100px;
-    height: 100px;
+    height: auto;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .witches_desc h2,
@@ -202,9 +218,7 @@ li:hover a {
 	color: #999;
 	font-weight: normal;
 }
-.pricing li:nth-last-child(2) {
-	padding: 30px 13px;
-}
+
 .pricing button {
 	width: auto;
 	margin: auto;
@@ -252,4 +266,62 @@ li:hover a {
     text-align: center;
     padding: 20px;
     margin: 20px auto;
+}
+
+/*Opinie*/
+
+.opinions {
+    background-image: url(../images/bckg_opinion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px 30px;
+}
+
+.opinion {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+
+.opinion h3 {
+    padding: 15px;
+}
+
+/*Portfolio */
+
+.portfolio {
+    display: table;
+    margin: 20px auto 50px;
+}
+
+.project {
+    width: 30%;
+    float: left;
+    margin: 20px;
+}
+
+/*Contact */
+
+.contact {
+    background-image: url(../images/bckg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px 30px;
+}
+
+.contact_info {
+    color: #fff;
+    text-align: center;
+}
+
+.contact_info span {
+    display: block;
+}
+
+.mail {
+    padding: 20px;
+    font-weight: 800;
+    padding: 20px;
+    font-size: 1.2rem;
 }
