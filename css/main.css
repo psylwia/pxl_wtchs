@@ -465,19 +465,31 @@ header {
 
 @media (max-width: 425px) {
     .banner_text {
-     width: 350px;
-     height: 200px;
+     width: 340px;
+     height: 180px;
+    }
+    
+    .banner {
+        height: 300px;
     }
     
     #tutaj {
-    font-size: 1.1rem;
+    font-size: 1rem;
     }
 
     #projekty {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     #all {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .logo img {
+        width: 100%;
     }
 }
