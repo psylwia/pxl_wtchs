@@ -492,4 +492,17 @@ header {
     .logo img {
         width: 100%;
     }
+    
+        .company_desc {
+        width: 100%;
+    }
+    
+    .witches_box, .off {
+        display: block;
+    }
+    
+    .offer_box {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
