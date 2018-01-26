@@ -404,7 +404,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 426px) {
     .logo, .menu {
         float: none;
         text-align: center;
@@ -462,4 +462,22 @@ header {
         margin: 0 auto;
     }
 }
+
+@media (max-width: 425px) {
+    .banner_text {
+     width: 350px;
+     height: 200px;
+    }
     
+    #tutaj {
+    font-size: 1.1rem;
+    }
+
+    #projekty {
+        font-size: 2rem;
+    }
+    
+    #all {
+        font-size: 1.1rem;
+    }
+}
