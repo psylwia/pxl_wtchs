@@ -1,5 +1,6 @@
 body, html {
   font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -445,7 +446,20 @@ header {
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    
+    .company_desc {
+        width: 100%;
+    }
+    
+    .witches_box, .off {
+        display: block;
+    }
+    
+    .offer_box {
+        width: 80%;
+        margin: 0 auto;
     }
 }
     
