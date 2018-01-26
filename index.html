@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
     <title>Pixel Witches</title>
 
     
@@ -14,7 +21,7 @@
     <header>
         <div class="container">
         <div class="logo">
-            <img src="images/pxl_wtchs_logo.png">
+            <img src="images/logo_pxl_001.png">
         </div>
         <nav class="menu">
             <ul>
@@ -30,11 +37,13 @@
     </header>
 
     <section class="banner">
-        <div class="banner_image">
-            
-        </div>
+            <div class="banner_text">
+            <span id="tutaj">TUTAJ TWORZYMY</span>
+            <span id="projekty">Projekty z odrobiną magii</span>
+            <span id="all"><span id="strony">Strony internetowe,</span><span id="grafika">Grafika,</span><span id="copy">Copywriting</span></span>
+            </div>
     </section>
-        <div class="container company" id="company">
+        <div class="container company sect" id="company">
             <div class="title title1">
                 <h1>Charakterystyka gatunku</h1></div>
             <div class="company_desc">
@@ -55,39 +64,41 @@
             </div>
         </div>
 
-        <div class="witches" id="witches">
+        <section class="witches sect" id="witches">
             <div class="container">
                 <div class="title title2">
                 <h1>Cechy osobnicze</h1></div>
+                <div class="witches_box">
             <div class="witches_desc">
-                <div class="avatar"><img src="images/avatar.png"></div>
+                <div class="avatar"><img src="images/my_001_sylwia.png"></div>
                 <h2>Sylwia Pawlak</h2>
                 <h3>Czary techniczne</h3>
-                <p>Poskromicielka kodów, która o technicznych zagadnieniach potrafi mówić w ludzkim języku.
-                Z właściwą sobie zaciętością zajmuje się sprawami niemożliwymi dopóki te nie staną się możliwe.
+                <p>Poskromicielka kodów, która o technicznych zagadnieniach potrafi mówić w ludzkim języku. Znając Wordpress od podszewki i sprawnie posługując się językami HTML, CSS i JavaScript z zaciętością zajmuje się sprawami niemożliwymi, dopóki te nie staną się możliwe.
                 </p>
             </div>
             <div class="witches_desc">
-                <div class="avatar"><img src="images/avatar.png"></div>
+                <div class="avatar"><img src="images/my_002_krysia.png"></div>
                 <h2>Krysia Kwiatkowska</h2>
                 <h3>Czary językowe</h3>
-                <p>Słowa są ważne, a dobrze je ważąc można w nie ubrać każdą myśl. Tak powstają nazwy, claimy i dłuższe teksty. Podejmuje się zamieniania chaotycznych fragmentów w spójną całość i tłumaczeń na język angielski i hiszpański. 
+                <p>Wie, że słowa są ważne i dobrze je ważąc potrafi w nie ubrać każdą myśl. Wymyśla nazwy i claimy, pisze dłuższe teksty. Podejmuje się zamieniania chaotycznych fragmentów w spójną całość i tłumaczenia na język angielski i hiszpański. 
                 </p>
             </div>
             <div class="witches_desc">
-                <div class="avatar"><img src="images/avatar.png"></div>
+                <div class="avatar"><img src="images/my_003_kata.png"></div>
                 <h2>Kasia Głód</h2>
                 <h3>Czary graficzne</h3>
                 <p>Różdżkę zastępuje na zmianę tabletem, pędzlem i aparatem. Chociaż zamiłowanie do różnorodności nie pozwala jej przywiązać się do jednego stylu, dzięki wiedzy i doświadczeniu z zakresu User Experience z łatwością porusza się w artystycznym chaosie. 
                 </p>
             </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <section id="offer">
+        <section id="offer" class="sect">
             <div class="offer container">
                 <div class="title title3">
                 <h1>Oferta</h1></div>
+                <div class="off">
                 <div class="offer_box">
                     <ul class="pricing p-pink">
 				        <li>
@@ -108,7 +119,7 @@
                 </div>
                 
                 <div class="offer_box">
-                    <ul class="pricing p-orange">
+                    <ul class="pricing p-blue">
 				        <li>
 							<img src="images/Magic-Wand.png" alt="">
 							<big>Arcyzaklęcie</big>
@@ -118,7 +129,7 @@
 						<li>licencja na płatny szablon</li>
 						<li>podłączenie Google Analytics</li>
 						<li>film z instrukcją obsługi</li>
-						<li>wybór spośród 3 dostępnych szablonów</li>
+						<li>wybór spośród 3 projektów graficznych</li>
 						<li>
 							<h3>2000-3000 zł</h3>
 						</li>
@@ -126,7 +137,7 @@
                     
                 </div>
                 <div class="offer_box">
-                    <ul class="pricing p-blue">
+                    <ul class="pricing p-orange">
 				        <li>
 							<img src="images/Magic-Wand.png" alt="">
 							<big>Pełen kocioł</big>
@@ -143,8 +154,9 @@
 					</ul>
                     
                 </div>
+                </div>
                 <div class="prices_info">
-                    <h4>Ceny podane wyżej są poglądowe. W celu dokładnej wyceny prosimy o kontakt.</h4>
+                    <span>Ceny podane wyżej są poglądowe. W celu dokładnej wyceny prosimy o kontakt.</span>
                 </div>
             </div>
         </section>
@@ -154,10 +166,17 @@
                 <div class="title title4">
                     <h1>Opinie</h1>
                 </div>
-                <div class="opinion">
-                    <img src="images/zdj.png">
-                    <h3>Kunegunda Zieleńska</h3>
-                    <span>Cupcake ipsum dolor sit amet pastry toffee muffin. Topping muffin danish. Dessert cotton candy marshmallow sugar plum.</span>
+                <div class="slider">
+                    <div class="opinion">
+                    <img src="images/iza.png">
+                    <h3>Izabela Misiak</h3>
+                    <span>Uwielbiam współpracę z Sylwią – jest prosto, przyjemnie, bez branżowego żargonu. Wystarczy że wiem jak strona, którą tworzymy, ma wyglądać i Sylwia za każdym razem bez problemu zmienia marzenie w rzeczywistość.</span>
+                    </div>
+                    <div class="opinion">
+                    <img src="images/magda.png">
+                    <h3>Magdalena Wieczorek</h3>
+                    <span>Sylwia jest niesamowita! To osoba pełna dobrej energii, cierpliwości i życzliwości. Ze zrozumieniem wysłuchiwała wszystkich moich potrzeb, dostosowała do nich stronę oraz cierpliwie dokonywała wszystkich przeróbek… Dzięki niej moje pomysły nabrały pięknego kształtu. Polecam serdecznie!</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -167,16 +186,21 @@
                 <div class="title title5">
                     <h1>Portfolio</h1>
                 </div>
-                <div class="project"><img src="images/medycyna.jpg"></div>
-                <div class="project"><img src="images/slowem.jpg"></div>
-                <div class="project"><img src="images/moonlights.jpg"></div>
-                <div class="project"><img src="images/slowem.jpg"></div>
-                <div class="project"><img src="images/moonlights.jpg"></div>
-                <div class="project"><img src="images/medycyna.jpg"></div>
+                <div class="projects">
+                    <div class="project"><img src="images/medycyna.jpg"></div>
+                    <div class="project"><img src="images/slowem.jpg"></div>
+                    <div class="project"><img src="images/moonlights.jpg"></div>
+                    <div class="project"><img src="images/yogaclassic.png"></div>
+                    <div class="project"><img src="images/przypiersic.png"></div>
+                    <div class="project"><img src="images/etsy.png"></div>
+                    <div class="project"><img src="images/etsykurs.png"></div>
+                    <div class="project"><img src="images/konf.png"></div>
+                    <div class="project"><img src="images/audelle.png"></div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact sect">
             <div class="title title6">
                     <h1>Kontakt</h1>
             </div>
@@ -185,6 +209,7 @@
             <span class="mail">kontakt@pixel-witches.pl</span>
             </div>
         </section>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

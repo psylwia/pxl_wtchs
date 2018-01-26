@@ -15,6 +15,10 @@ h2 {
     margin: 0 auto;
 }
 
+.sect {
+    padding-bottom: 20px;
+}
+
 /*Menu*/
 header {
     padding: 40px 0;
@@ -24,124 +28,140 @@ header {
     float: left;
 }
 
+.logo img {
+    width: 80%;
+}
+
 .menu {
     float: right;
     font-weight: bold;
     margin-top: -5px;
 }
 
-nav ul li {
+.menu ul li {
   display: inline-block;
-  padding: 5px 30px;
+  padding: 5px 25px;
     border: 2px solid #0a037c;
     border-radius: 15px;
 }
 
-nav ul li a {
+.menu ul li a {
   padding: 0 8px;
   text-decoration: none;
   display: block;
     color: #0a037c;
 }
 
-li:hover {
+.menu ul li:hover {
   background-color: #0a037c;
 }
 
-li:hover a {
+.menu ul li:hover a {
   color: #fff;
 }
+
+
 
 /*Baner */
 
 .banner {
-    background-image:url(../images/banner_main.png);
+    background-image:url(../images/tlo_baner_001.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 600px;
+    position: relative;
+}
+
+.banner_text {
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 830px;
+     height: 200px;
+}
+
+.banner_text span {
+    text-align: center;
+    padding: 5px;
+}
+
+#tutaj {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+}
+
+#projekty {
+    display: block;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 900;
+    
+}
+#all {
+    display: block;
+    font-size: 1.8rem;
+}
+
+#strony {
+    color: #f0057f;
+    
+}
+
+#grafika {
+    color: #ff8500;
+    
+}
+
+#copy {
+    color: #07efc8;
+    
 }
 
 /*Company*/
 .company {
+/*
     margin-top: 50px;
     margin-bottom: 40px;
+*/
     display: table;
 }
 
 .title {
     text-transform: uppercase;
-    background-image: url(../images/pxl.png);
-    background-repeat: no-repeat;
     margin: 30px auto;
     padding: 10px;
+    text-align: center;
 }
 
-.title1 {
-    background-position: 30% 0px;
-    padding-left: 31%;
-}
-
-.title2 {
-    background-position: 36% 0px;
-    padding-left: 37%;
-}
-
-.title3 {
-    background-position: 43.5% 0px;
-    padding-left: 44%;
-}
-
-
-.title4 {
-    background-position: 46.5% 0px;
-    padding-left: 47%;
-}
-
-.title5 {
-    background-position: 43% 0px;
-    padding-left: 44%;
+.title h1::before {
+    content: url("../images/pxl.png");
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .title6 {
-    background-position: 43% 0px;
-    padding-left: 44%;
     color: #fff;
+    padding-top: 40px;
 }
 
 .company_desc {
     float: left;
     width: 33%;
-    padding: 10px;  
+    padding: 0 10px 10px;  
 }
 
 .company_desc h2 {
     text-align: center;
-    padding-top: 10px;
 }
 
 .company_desc p {
     padding: 20px;
     text-align: justify;
-}
-
-.line {
-    height: 3px;
-    margin: 0 auto;
-    background-color: #690080;
-    margin-bottom: 10px;
-}
-
-.line1, .line3 {
-    width: 70%;
-}
-
-.line2 {
-    width: 90%;
-}
-
-.line3 {
-    width: 65%;
 }
 
 /*Witches */
@@ -151,19 +171,22 @@ li:hover a {
     background-repeat: no-repeat;
     background-size: cover;
     display: table;
-    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.witches_box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .witches_desc {
-    float: left;
-    width: 33%;
-    padding: 20px;
+    padding: 0 20px 20px;
     text-align: justify;
 }
 
 .avatar {
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 210px;
     margin: 0 auto;
 }
 
@@ -176,11 +199,18 @@ li:hover a {
 
 /*Offer */
 
+.offer {
+    display: table;
+}
 
+.off {
+    display: flex;
+    justify-content: space-around;
+}
 
 .offer_box {
-    float: left;
-    width: 33%;
+    margin-bottom: 20px;
+    width: 32%;
 }
 
 .pricing {
@@ -188,7 +218,7 @@ li:hover a {
 	border: 2px solid #f0f0f0;
 	color: #777;
 	padding-left: 0;
-    margin: 20px 10px 20px;
+    margin: 0px 10px 20px;
 }
 .pricing img {
 	display: block;
@@ -264,8 +294,9 @@ li:hover a {
 
 .prices_info {
     text-align: center;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 0 20px 20px;
+/*    margin: 20px auto;*/
+    color: #777;
 }
 
 /*Opinie*/
@@ -274,18 +305,27 @@ li:hover a {
     background-image: url(../images/bckg_opinion.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 0px 30px;
+    padding: 0px 0px 20px;
+    display: table;
 }
 
 .opinion {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    width: 50%;
+}
+
+.opinion img {
+    width: 150px;
+    height: auto;
 }
 
 .opinion h3 {
     padding: 15px;
+}
+
+.opinion span {
+/*    padding: 20%;*/
 }
 
 /*Portfolio */
@@ -295,10 +335,17 @@ li:hover a {
     margin: 20px auto 50px;
 }
 
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .project {
-    width: 30%;
-    float: left;
-    margin: 20px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
 }
 
 /*Contact */
@@ -307,8 +354,9 @@ li:hover a {
     background-image: url(../images/bckg_contact.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 0px 30px;
+/*    display: table;*/
 }
+
 
 .contact_info {
     color: #fff;
@@ -325,3 +373,79 @@ li:hover a {
     padding: 20px;
     font-size: 1.2rem;
 }
+
+/*Media*/
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  
+    .menu ul li {
+      padding: 5px 10px;
+    }
+
+    .menu ul li a {
+        padding: 0 3px;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .menu {
+        margin-top: -4px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo, .menu {
+        float: none;
+        text-align: center;
+    }
+    
+    .menu ul li {
+      padding: 5px 5px;
+        margin-top: 10px;
+    }
+    
+    header {
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    
+    .banner {
+        height: 400px;
+    }
+    
+    .banner_text {
+     width: 530px;
+     height: 200px;
+    }
+    
+    #tutaj {
+    font-size: 1.2rem;
+    }
+
+    #projekty {
+        font-size: 2.5rem;
+    }
+    
+    #all {
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+    
