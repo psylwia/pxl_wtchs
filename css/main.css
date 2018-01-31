@@ -387,7 +387,7 @@ header {
 }
 
 .project:hover .overlay{
-    opacity: 0.9;
+    opacity: 0.75;
 }
 
 .project_text {
