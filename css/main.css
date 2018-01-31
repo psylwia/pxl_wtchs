@@ -1,23 +1,30 @@
 body, html {
   font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
+    color: #1d1d1d;
+    font-size: 14px;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .sect {
     padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 /*Menu*/
@@ -30,7 +37,7 @@ header {
 }
 
 .logo img {
-    width: 80%;
+    width: 50%;
 }
 
 .menu {
@@ -41,7 +48,7 @@ header {
 
 .menu ul li {
   display: inline-block;
-  padding: 5px 25px;
+  padding: 5px 20px;
     border: 2px solid #0a037c;
     border-radius: 15px;
 }
@@ -92,20 +99,20 @@ header {
 
 #tutaj {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
 }
 
 #projekty {
     display: block;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: #fff;
     font-weight: 900;
     
 }
 #all {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 #strony {
@@ -181,20 +188,29 @@ header {
 }
 
 .witches_desc {
-    padding: 0 20px 20px;
+    padding: 10px;
     text-align: justify;
 }
 
 .avatar {
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 140px;
     margin: 0 auto;
 }
 
-.witches_desc h2,
 .witches_desc h3 {
-    padding: 20px;
+    margin-bottom: 20px;
     text-align: center;
+}
+
+.witches_desc h2 {
+    text-align: center;
+    padding: 35px 0 0px;
+    margin-top: 10px;
+}
+
+.witches_desc p {
+    padding: 20px;
 }
 
 
@@ -326,7 +342,7 @@ header {
 }
 
 .opinion span {
-/*    padding: 20%;*/
+    width: 50%;
 }
 
 /*Portfolio */
@@ -343,10 +359,15 @@ header {
 }
 
 .project {
-    width: 400px;
+    width: 280px;
     height: auto;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
+    margin: 30px;
+    border: 1px solid #0a037c;
+
+}
+
+.project:hover {
+    border: 2spx solid #0a037c;
 }
 
 /*Contact */
