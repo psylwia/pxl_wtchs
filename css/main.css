@@ -359,17 +359,47 @@ header {
 }
 
 .project {
+/*
     width: 280px;
     height: auto;
+*/
     margin: 30px;
-    border: 1px solid #0a037c;
-
+    position: relative;
 }
 
-.project:hover {
-    border: 2spx solid #0a037c;
+.project img {
+    width: 280px;
+    height: auto;
+    display: block;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #f0057f;
+}
+
+.project:hover .overlay{
+    opacity: 0.9;
+}
+
+.project_text {
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 /*Contact */
 
 .contact {
