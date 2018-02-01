@@ -266,43 +266,23 @@ header {
 	font-weight: normal;
 }
 
-.pricing button {
-	width: auto;
-	margin: auto;
-	font-size: 15px;
-	font-weight: bold;
-	border-radius: 50px;
-	color: #fff;
-	padding: 9px 24px;
-	background: #aaa;
-	opacity: 1;
-	transition: opacity .2s ease;
-  border: none;
-  outline: none;
-}
-.pricing button:hover {
-	opacity: .9;
-}
-.pricing button:active {
-	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
 /* pricing color */
 .p-pink big,
-.p-pink h3 {
+.p-pink h5 {
 	color: #f0057f;
 }
 .p-pink button {
 	background: #f0057f;
 }
 .p-orange big,
-.p-orange h3 {
+.p-orange h5 {
 	color: #ff8500;
 }
 .p-orange button {
 	background: #ff8500;
 }
 .p-blue big,
-.p-blue h3 {
+.p-blue h5 {
 	color: #07efc8;
 }
 .p-blue button {
@@ -312,7 +292,6 @@ header {
 .prices_info {
     text-align: center;
     padding: 0 20px 20px;
-/*    margin: 20px auto;*/
     color: #777;
 }
 
